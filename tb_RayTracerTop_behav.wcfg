@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_RayTracerTop_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_RayTracerTop" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="2,072.001 ns"></ZoomEndTime>
+      <Cursor1Time time="850.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="130"></NameColumnWidth>
+      <ValueColumnWidth column_width="90"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="53" />
+   <wvobject fp_name="/tb_RayTracerTop/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/pixel_x" type="array">
+      <obj_property name="ElementShortName">pixel_x[9:0]</obj_property>
+      <obj_property name="ObjectShortName">pixel_x[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/pixel_y" type="array">
+      <obj_property name="ElementShortName">pixel_y[9:0]</obj_property>
+      <obj_property name="ObjectShortName">pixel_y[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/pixel_valid" type="logic">
+      <obj_property name="ElementShortName">pixel_valid</obj_property>
+      <obj_property name="ObjectShortName">pixel_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/ray_valid" type="logic">
+      <obj_property name="ElementShortName">ray_valid</obj_property>
+      <obj_property name="ObjectShortName">ray_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/hit_valid" type="logic">
+      <obj_property name="ElementShortName">hit_valid</obj_property>
+      <obj_property name="ObjectShortName">hit_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/hit_valid2" type="logic">
+      <obj_property name="ElementShortName">hit_valid2</obj_property>
+      <obj_property name="ObjectShortName">hit_valid2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/sqrt_start" type="array">
+      <obj_property name="ElementShortName">sqrt_start[4:0]</obj_property>
+      <obj_property name="ObjectShortName">sqrt_start[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/sqrt_busy" type="array">
+      <obj_property name="ElementShortName">sqrt_busy[4:0]</obj_property>
+      <obj_property name="ObjectShortName">sqrt_busy[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/disc" type="array">
+      <obj_property name="ElementShortName">disc[63:0]</obj_property>
+      <obj_property name="ObjectShortName">disc[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/sqrt_input" type="array">
+      <obj_property name="ElementShortName">sqrt_input[63:0]</obj_property>
+      <obj_property name="ObjectShortName">sqrt_input[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/disc_sqrt" type="array">
+      <obj_property name="ElementShortName">disc_sqrt[31:0]</obj_property>
+      <obj_property name="ObjectShortName">disc_sqrt[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/color" type="array">
+      <obj_property name="ElementShortName">color[23:0]</obj_property>
+      <obj_property name="ObjectShortName">color[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/fifo_empty" type="logic">
+      <obj_property name="ElementShortName">fifo_empty</obj_property>
+      <obj_property name="ObjectShortName">fifo_empty</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/delayed_x" type="array">
+      <obj_property name="ElementShortName">delayed_x[9:0]</obj_property>
+      <obj_property name="ObjectShortName">delayed_x[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/delayed_y" type="array">
+      <obj_property name="ElementShortName">delayed_y[9:0]</obj_property>
+      <obj_property name="ObjectShortName">delayed_y[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/ray_dir_x" type="array">
+      <obj_property name="ElementShortName">ray_dir_x[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ray_dir_x[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/ray_dir_y" type="array">
+      <obj_property name="ElementShortName">ray_dir_y[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ray_dir_y[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/ray_dir_z" type="array">
+      <obj_property name="ElementShortName">ray_dir_z[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ray_dir_z[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/b" type="array">
+      <obj_property name="ElementShortName">b[63:0]</obj_property>
+      <obj_property name="ObjectShortName">b[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/normal_x" type="array">
+      <obj_property name="ElementShortName">normal_x[31:0]</obj_property>
+      <obj_property name="ObjectShortName">normal_x[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/normal_y" type="array">
+      <obj_property name="ElementShortName">normal_y[31:0]</obj_property>
+      <obj_property name="ObjectShortName">normal_y[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/normal_z" type="array">
+      <obj_property name="ElementShortName">normal_z[31:0]</obj_property>
+      <obj_property name="ObjectShortName">normal_z[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/b_delayed" type="array">
+      <obj_property name="ElementShortName">b_delayed[63:0]</obj_property>
+      <obj_property name="ObjectShortName">b_delayed[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/OX" type="array">
+      <obj_property name="ElementShortName">OX[31:0]</obj_property>
+      <obj_property name="ObjectShortName">OX[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/OY" type="array">
+      <obj_property name="ElementShortName">OY[31:0]</obj_property>
+      <obj_property name="ObjectShortName">OY[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/OZ" type="array">
+      <obj_property name="ElementShortName">OZ[31:0]</obj_property>
+      <obj_property name="ObjectShortName">OZ[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/CX" type="array">
+      <obj_property name="ElementShortName">CX[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CX[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/CY" type="array">
+      <obj_property name="ElementShortName">CY[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CY[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/CZ" type="array">
+      <obj_property name="ElementShortName">CZ[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CZ[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/RADIUS" type="array">
+      <obj_property name="ElementShortName">RADIUS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RADIUS[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/b_delayed" type="array">
+      <obj_property name="ElementShortName">b_delayed[63:0]</obj_property>
+      <obj_property name="ObjectShortName">b_delayed[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/inverse_double_a" type="array">
+      <obj_property name="ElementShortName">inverse_double_a[31:0]</obj_property>
+      <obj_property name="ObjectShortName">inverse_double_a[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/inverse_double_a_delayed" type="array">
+      <obj_property name="ElementShortName">inverse_double_a_delayed[31:0]</obj_property>
+      <obj_property name="ObjectShortName">inverse_double_a_delayed[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/double_a" type="array">
+      <obj_property name="ElementShortName">double_a[31:0]</obj_property>
+      <obj_property name="ObjectShortName">double_a[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/double_a_input" type="array">
+      <obj_property name="ElementShortName">double_a_input[31:0]</obj_property>
+      <obj_property name="ObjectShortName">double_a_input[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/a_inverse_done" type="logic">
+      <obj_property name="ElementShortName">a_inverse_done</obj_property>
+      <obj_property name="ObjectShortName">a_inverse_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/fifo_empty_a" type="logic">
+      <obj_property name="ElementShortName">fifo_empty_a</obj_property>
+      <obj_property name="ObjectShortName">fifo_empty_a</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/valid_to_inverse" type="logic">
+      <obj_property name="ElementShortName">valid_to_inverse</obj_property>
+      <obj_property name="ObjectShortName">valid_to_inverse</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/ray_dir_x_delayed" type="array">
+      <obj_property name="ElementShortName">ray_dir_x_delayed[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ray_dir_x_delayed[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/ray_dir_y_delayed" type="array">
+      <obj_property name="ElementShortName">ray_dir_y_delayed[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ray_dir_y_delayed[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/ray_dir_z_delayed" type="array">
+      <obj_property name="ElementShortName">ray_dir_z_delayed[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ray_dir_z_delayed[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/TKEEP" type="logic">
+      <obj_property name="ElementShortName">TKEEP</obj_property>
+      <obj_property name="ObjectShortName">TKEEP</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/TVALID" type="logic">
+      <obj_property name="ElementShortName">TVALID</obj_property>
+      <obj_property name="ObjectShortName">TVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/TUSER" type="logic">
+      <obj_property name="ElementShortName">TUSER</obj_property>
+      <obj_property name="ObjectShortName">TUSER</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/TFINAL" type="logic">
+      <obj_property name="ElementShortName">TFINAL</obj_property>
+      <obj_property name="ObjectShortName">TFINAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/TLAST" type="logic">
+      <obj_property name="ElementShortName">TLAST</obj_property>
+      <obj_property name="ObjectShortName">TLAST</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/TREADY" type="logic">
+      <obj_property name="ElementShortName">TREADY</obj_property>
+      <obj_property name="ObjectShortName">TREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/BUSY" type="logic">
+      <obj_property name="ElementShortName">BUSY</obj_property>
+      <obj_property name="ObjectShortName">BUSY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/scan_out" type="array">
+      <obj_property name="ElementShortName">scan_out[23:0]</obj_property>
+      <obj_property name="ObjectShortName">scan_out[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/fifo_empty_rays" type="logic">
+      <obj_property name="ElementShortName">fifo_empty_rays</obj_property>
+      <obj_property name="ObjectShortName">fifo_empty_rays</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_RayTracerTop/color_valid" type="logic">
+      <obj_property name="ElementShortName">color_valid</obj_property>
+      <obj_property name="ObjectShortName">color_valid</obj_property>
+   </wvobject>
+</wave_config>
