@@ -1,0 +1,143 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.23267",
+   "Default View_TopLeft":"2568,11",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 16 -x 5490 -y 500 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 16 -x 5490 -y 530 -defaultsOSRD
+preplace port port-id_TMDS_Clk_n_0 -pg 1 -lvl 16 -x 5490 -y 940 -defaultsOSRD
+preplace port port-id_TMDS_Clk_p_0 -pg 1 -lvl 16 -x 5490 -y 910 -defaultsOSRD
+preplace port port-id_valid1 -pg 1 -lvl 16 -x 5490 -y 790 -defaultsOSRD
+preplace portBus Color -pg 1 -lvl 16 -x 5490 -y 620 -defaultsOSRD
+preplace portBus ResetLED -pg 1 -lvl 16 -x 5490 -y 1070 -defaultsOSRD
+preplace portBus TMDS_Data_n_0 -pg 1 -lvl 16 -x 5490 -y 1000 -defaultsOSRD
+preplace portBus TMDS_Data_p_0 -pg 1 -lvl 16 -x 5490 -y 970 -defaultsOSRD
+preplace portBus clock -pg 1 -lvl 16 -x 5490 -y 650 -defaultsOSRD
+preplace inst FrameBuffer_0 -pg 1 -lvl 14 -x 4910 -y 650 -defaultsOSRD
+preplace inst PixelDelayFIFO_0 -pg 1 -lvl 8 -x 2440 -y 810 -defaultsOSRD
+preplace inst Ray_Core_0 -pg 1 -lvl 6 -x 1620 -y 600 -defaultsOSRD
+preplace inst Ray_Intersector_Wrap_0 -pg 1 -lvl 7 -x 2030 -y 710 -defaultsOSRD
+preplace inst Shading_0 -pg 1 -lvl 2 -x 360 -y 580 -defaultsOSRD
+preplace inst ThreadGenerator_0 -pg 1 -lvl 5 -x 1280 -y 620 -defaultsOSRD
+preplace inst axi_mem_intercon -pg 1 -lvl 12 -x 3990 -y 430 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 10 -x 3120 -y 740 -defaultsOSRD
+preplace inst axi_vdma_0 -pg 1 -lvl 11 -x 3550 -y 450 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 9 -x 2800 -y 890 -defaultsOSRD
+preplace inst debug_bridge_0 -pg 1 -lvl 11 -x 3550 -y 960 -defaultsOSRD
+preplace inst debug_bridge_1 -pg 1 -lvl 12 -x 3990 -y 970 -defaultsOSRD
+preplace inst ila_0 -pg 1 -lvl 14 -x 4910 -y 220 -defaultsOSRD
+preplace inst processing_system7_1 -pg 1 -lvl 13 -x 4380 -y 540 -defaultsOSRD
+preplace inst rst_ps7_0_50M -pg 1 -lvl 14 -x 4910 -y 1250 -defaultsOSRD
+preplace inst util_reduced_logic_0 -pg 1 -lvl 3 -x 670 -y 330 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 4 -x 970 -y 320 -defaultsOSRD
+preplace inst util_vector_logic_1 -pg 1 -lvl 3 -x 670 -y 230 -defaultsOSRD
+preplace inst v_axi4s_vid_out_0 -pg 1 -lvl 14 -x 4910 -y 960 -defaultsOSRD
+preplace inst v_tc_0 -pg 1 -lvl 13 -x 4380 -y 1030 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 12 -x 3990 -y 1080 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 6 -x 1620 -y 260 -defaultsOSRD
+preplace inst xlconstant_10 -pg 1 -lvl 1 -x 80 -y 790 -defaultsOSRD
+preplace inst xlconstant_11 -pg 1 -lvl 1 -x 80 -y 690 -defaultsOSRD
+preplace inst xlconstant_12 -pg 1 -lvl 1 -x 80 -y 290 -defaultsOSRD
+preplace inst xlconstant_14 -pg 1 -lvl 1 -x 80 -y 390 -defaultsOSRD
+preplace inst xlconstant_15 -pg 1 -lvl 1 -x 80 -y 490 -defaultsOSRD
+preplace inst xlconstant_2 -pg 1 -lvl 6 -x 1620 -y 360 -defaultsOSRD
+preplace inst xlconstant_3 -pg 1 -lvl 6 -x 1620 -y 460 -defaultsOSRD
+preplace inst xlconstant_4 -pg 1 -lvl 6 -x 1620 -y 760 -defaultsOSRD
+preplace inst xlconstant_5 -pg 1 -lvl 6 -x 1620 -y 860 -defaultsOSRD
+preplace inst xlconstant_6 -pg 1 -lvl 6 -x 1620 -y 960 -defaultsOSRD
+preplace inst xlconstant_7 -pg 1 -lvl 6 -x 1620 -y 1060 -defaultsOSRD
+preplace inst xlconstant_8 -pg 1 -lvl 6 -x 1620 -y 1160 -defaultsOSRD
+preplace inst xlconstant_9 -pg 1 -lvl 1 -x 80 -y 590 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 15 -x 5310 -y 650 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 11 -x 3550 -y 720 -defaultsOSRD
+preplace inst FramePacker_0 -pg 1 -lvl 9 -x 2800 -y 330 -defaultsOSRD
+preplace inst rgb2dvi_0 -pg 1 -lvl 15 -x 5310 -y 940 -defaultsOSRD
+preplace netloc FrameBuffer_0_color_out 1 14 1 NJ 650
+preplace netloc FramePacker_0_busy 1 9 5 2940 100 NJ 100 NJ 100 NJ 100 NJ
+preplace netloc FramePacker_0_frame_done 1 9 5 2950J 220 NJ 220 3810 240 NJ 240 NJ
+preplace netloc FramePacker_0_tkeep 1 9 5 NJ 290 3340 250 3830J 260 NJ 260 NJ
+preplace netloc FramePacker_0_tlast 1 9 5 NJ 310 3350 260 3820J 270 NJ 270 4690J
+preplace netloc FramePacker_0_tuser 1 9 5 NJ 330 3330 230 3840J 250 NJ 250 4700J
+preplace netloc PixelDelayFIFO_0_isEmpty 1 8 1 N 810
+preplace netloc PixelDelayFIFO_0_pixel_x_out 1 8 6 2610 170 NJ 170 NJ 170 NJ 170 NJ 170 4710
+preplace netloc PixelDelayFIFO_0_pixel_y_out 1 8 6 2630 180 NJ 180 NJ 180 NJ 180 NJ 180 4610
+preplace netloc Ray_Core_0_out_valid 1 6 1 1770 620n
+preplace netloc Ray_Core_0_ray_dir_x 1 6 1 1790 570n
+preplace netloc Ray_Core_0_ray_dir_y 1 6 1 1780 590n
+preplace netloc Ray_Core_0_ray_dir_z 1 6 1 1760 610n
+preplace netloc Ray_Intersector_Wrap_0_normal_X 1 1 7 200 130 NJ 130 NJ 130 NJ 130 NJ 130 NJ 130 2190
+preplace netloc Ray_Intersector_Wrap_0_normal_Y 1 1 7 220 1220 NJ 1220 NJ 1220 NJ 1220 NJ 1220 NJ 1220 2210
+preplace netloc Ray_Intersector_Wrap_0_normal_Z 1 1 7 230 750 NJ 750 NJ 750 NJ 750 1460J 700 1750J 900 2190
+preplace netloc Ray_Intersector_Wrap_0_out_VALID 1 1 7 210 1230 NJ 1230 NJ 1230 NJ 1230 NJ 1230 1750J 1210 2220
+preplace netloc Ray_Intersector_Wrap_0_sqrt_START 1 2 6 530 1240 NJ 1240 NJ 1240 NJ 1240 NJ 1240 2200
+preplace netloc Shading_0_color 1 2 12 490 140 NJ 140 NJ 140 NJ 140 NJ 140 NJ 140 2640 150 NJ 150 NJ 150 NJ 150 NJ 150 4680
+preplace netloc Shading_0_color_valid 1 2 12 520 170 NJ 170 NJ 170 1460J 180 NJ 180 NJ 180 2620 190 NJ 190 NJ 190 NJ 190 NJ 190 4730
+preplace netloc ThreadGenerator_0_pixel_x 1 5 3 1450 160 NJ 160 2270
+preplace netloc ThreadGenerator_0_pixel_y 1 5 3 1440 150 NJ 150 2280
+preplace netloc ThreadGenerator_0_valid 1 5 11 1470 170 NJ 170 2260 700 NJ 700 2950J 830 NJ 830 NJ 830 NJ 830 4640J 780 NJ 780 5470J
+preplace netloc axi_gpio_0_ip2intc_irpt 1 11 2 3850 610 4170J
+preplace netloc axi_vdma_0_m_axis_mm2s_tdata 1 11 3 3780 790 NJ 790 4630J
+preplace netloc axi_vdma_0_m_axis_mm2s_tlast 1 11 3 3770 800 NJ 800 4620J
+preplace netloc axi_vdma_0_m_axis_mm2s_tuser 1 11 3 3750 810 NJ 810 4610J
+preplace netloc axi_vdma_0_m_axis_mm2s_tvalid 1 11 3 3760 580 4130J 420 4660
+preplace netloc axi_vdma_0_s_axis_s2mm_tready 1 9 5 NJ 370 3300 160 NJ 160 NJ 160 NJ
+preplace netloc clk_wiz_0_clk_out1 1 1 13 210 400 NJ 400 NJ 400 1150 400 1480 190 1870 510 2300 510 2650 510 2940 510 3280 200 NJ 200 NJ 200 4670
+preplace netloc clk_wiz_0_clk_out2 1 9 6 NJ 880 3300 870 NJ 870 4140 870 4730 790 5110
+preplace netloc clk_wiz_0_clk_out3 1 9 6 2990J 890 3350J 880 NJ 880 NJ 880 4590J 1130 5130
+preplace netloc framPacker_0_tdata 1 9 5 NJ 270 3320 80 NJ 80 NJ 80 NJ
+preplace netloc framPacker_0_tvalid 1 9 5 NJ 350 3310 210 NJ 210 NJ 210 4720J
+preplace netloc processing_system7_0_FCLK_CLK1 1 8 6 2660 980 2980 850 3330 640 3830 600 4150 430 4650
+preplace netloc processing_system7_0_FCLK_RESET0_N1 1 13 1 4600 580n
+preplace netloc rgb2dvi_0_TMDS_Clk_n 1 15 1 NJ 940
+preplace netloc rgb2dvi_0_TMDS_Clk_p 1 15 1 5470J 910n
+preplace netloc rgb2dvi_0_TMDS_Data_n 1 15 1 5470J 980n
+preplace netloc rgb2dvi_0_TMDS_Data_p 1 15 1 5470J 960n
+preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 1 15 230 410 NJ 410 NJ 410 1140 410 1490 200 1860 520 2290 520 2660 770 2970 840 3290 240 3800 820 4150 820 4670 1140 5120 1070 NJ
+preplace netloc util_reduced_logic_0_Res 1 3 1 NJ 330
+preplace netloc util_vector_logic_0_Res 1 4 1 1110 320n
+preplace netloc util_vector_logic_1_Res 1 3 1 810J 230n
+preplace netloc v_axi4s_vid_out_0_s_axis_video_tready 1 11 3 3790 590 4160J 440 4720
+preplace netloc v_axi4s_vid_out_0_vid_active_video 1 14 1 5100 870n
+preplace netloc v_axi4s_vid_out_0_vid_data 1 14 1 N 890
+preplace netloc v_axi4s_vid_out_0_vid_hsync 1 14 1 N 910
+preplace netloc v_axi4s_vid_out_0_vid_vsync 1 14 1 N 930
+preplace netloc v_axi4s_vid_out_0_vtg_ce 1 12 3 4170 1150 NJ 1150 5090
+preplace netloc xlconstant_0_dout 1 12 2 4160 1160 4730J
+preplace netloc xlconstant_10_dout 1 1 1 170J 630n
+preplace netloc xlconstant_11_dout 1 1 1 160J 610n
+preplace netloc xlconstant_12_dout 1 1 1 180J 290n
+preplace netloc xlconstant_14_dout 1 1 1 170J 390n
+preplace netloc xlconstant_15_dout 1 1 1 160J 490n
+preplace netloc xlconstant_1_dout 1 6 1 1820J 260n
+preplace netloc xlconstant_2_dout 1 6 1 1810J 360n
+preplace netloc xlconstant_3_dout 1 6 1 1800J 460n
+preplace netloc xlconstant_4_dout 1 6 1 NJ 760
+preplace netloc xlconstant_5_dout 1 6 1 1770J 780n
+preplace netloc xlconstant_6_dout 1 6 1 1790J 800n
+preplace netloc xlconstant_7_dout 1 6 1 1820J 820n
+preplace netloc xlconstant_8_dout 1 6 1 1840J 840n
+preplace netloc xlconstant_9_dout 1 1 1 NJ 590
+preplace netloc xlslice_0_Dout 1 15 1 5470J 620n
+preplace netloc axi_mem_intercon_M00_AXI 1 12 1 4140 430n
+preplace netloc axi_smc_M00_AXI 1 10 1 3250 720n
+preplace netloc axi_smc_M01_AXI 1 10 1 3260 320n
+preplace netloc axi_smc_M02_AXI 1 10 1 3310 700n
+preplace netloc axi_vdma_0_M_AXI_MM2S 1 11 1 N 340
+preplace netloc axi_vdma_0_M_AXI_S2MM 1 11 1 N 360
+preplace netloc debug_bridge_0_m0_bscan 1 11 1 N 960
+preplace netloc processing_system7_0_M_AXI_GP0 1 9 5 2990 140 NJ 140 NJ 140 NJ 140 4590
+preplace netloc processing_system7_1_DDR 1 13 3 NJ 500 NJ 500 NJ
+preplace netloc processing_system7_1_FIXED_IO 1 13 3 NJ 520 NJ 520 5470J
+preplace netloc v_tc_0_vtiming_out 1 13 1 4660 970n
+levelinfo -pg 1 0 80 360 670 970 1280 1620 2030 2440 2800 3120 3550 3990 4380 4910 5310 5490
+pagesize -pg 1 -db -bbox -sgen 0 0 5670 1350
+"
+}
+{
+   "da_axi4_cnt":"5",
+   "da_board_cnt":"2",
+   "da_clkrst_cnt":"14",
+   "da_ps7_cnt":"1"
+}
