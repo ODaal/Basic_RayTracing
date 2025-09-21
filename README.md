@@ -5,7 +5,7 @@ Features 🚀:
   - "🟦 Thread Generator"
     description: >
       Generates pixel coordinates (x, y) for each ray to be traced.
-      Ensures parallelized launching of rays into the Ray Core.
+      Ensures launching one ray at a time into the Ray Core for now.
 
   - "🟩 Ray Core"
     description: >
