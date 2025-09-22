@@ -75,3 +75,18 @@ SYSTEM FLOW 💻:
   <img width="2342" height="1102" alt="image" src="https://github.com/user-attachments/assets/561fc23a-fcb3-4ed0-958a-8ddf105a5b89" />
 
 
+
+
+  ## 🚧 Limitations
+- Objects and light source are hard-coded.
+- HDMI pipeline not yet functional (still under development).
+- One-ray-at-a-time tracing model (not full parallelization yet).
+- Fixed-point math introduces rounding errors.
+
+## 🔮 Future Work
+- Add multiple objects (spheres, planes).
+- Implement full parallelization.
+- Enable reflections and recursive rays.
+- Complete HDMI output and test on real display.
+
+
