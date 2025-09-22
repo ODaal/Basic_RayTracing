@@ -1,5 +1,5 @@
 # Basic_RayTracing
-This project is a hardware-based ray tracing engine implemented in Verilog for the PYNQ-Z2 FPGA board. It demonstrates the fundamentals of real-time graphics rendering using fixed-point arithmetic and modular design.
+This project is a hardware-based ray tracing engine implemented in Verilog for the Xilinx PYNQ-Z2 FPGA board. It demonstrates the fundamentals of real-time graphics rendering using fixed-point arithmetic and modular design.
 
 Features 🚀:
   - "🟦 Thread Generator"
@@ -16,7 +16,8 @@ Features 🚀:
     description: >
       Performs ray-sphere intersection tests using Q18.14 fixed-point math.
       Computes object surface normals for shading and uses a square root module
-      (with sqrt_START) to solve quadratic intersection equations.
+      (4 in parallel) to solve quadratic intersection equations.
+      Mathematical computation are parallelized (4 modules), delays are being solved using FIFOs
 
   - "🌞 Shading Module"
     description: >
@@ -42,23 +43,30 @@ Features 🚀:
   - "🔗 AXI SmartConnect"
     description: >
       Bridges framebuffer output to the HDMI pipeline (rgb2dvi) for monitor display.
+    
 
 SYSTEM FLOW 💻:
 
   - step: "1️⃣"
-    action: "Thread Generator launches pixel coordinates."
+    "Thread Generator launches pixel coordinates."
     
   - step: "2️⃣"
-    action: "Ray Core builds corresponding ray directions."
+    "Ray Core builds corresponding ray directions."
     
   - step: "3️⃣"
-    action: "Ray Intersector checks intersections with objects (spheres)."
+    "Ray Intersector checks intersections with objects (spheres)." (Hard Coded for now)
     
   - step: "4️⃣"
-    action: "Shading Module computes final color using lighting + normals."
+    action: "Shading Module computes final color using lighting + normals." (Lightning coordinates are hard coded for now)
     
   - step: "5️⃣"
     action: "Pixel FIFO synchronizes pixel coordinates with shading output."
     
   - step: "6️⃣"
-    action: "Frame Packer + AXI/HDMI send the final rendered frame to display."
+    action: "Frame Packer + AXI/HDMI send the final rendered frame to display." ( Still not working :( )
+
+
+
+  The block design is :
+  <img width="2255" height="941" alt="image" src="https://github.com/user-attachments/assets/ace5bfcb-5e9f-49dd-ae81-489c5471420c" />
+
