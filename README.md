@@ -93,8 +93,13 @@ In testbench simulation :
 
 
 Pixel y = 0d9
+In the ILA :
 <img width="2270" height="149" alt="image" src="https://github.com/user-attachments/assets/7a632553-02d9-4d93-ab3c-f6903f957bde" />
 <img width="2468" height="148" alt="image" src="https://github.com/user-attachments/assets/ec0aac28-0552-42ba-9408-1202d5bdd2a3" />
+
+In testbench simulation :
+<img width="2124" height="405" alt="image" src="https://github.com/user-attachments/assets/5b444bc1-0087-4e80-89d7-defcb307f1dd" />
+
 
 
 
