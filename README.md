@@ -77,14 +77,17 @@ SYSTEM FLOW 💻:
 The results are as follow :
 
 For Pixel y = 109
+In the ILA :
 <img width="2466" height="153" alt="image" src="https://github.com/user-attachments/assets/88360559-20c9-4b8e-ab5d-516b8d31fe7a" />
+In testbench simulation :
+<img width="2125" height="399" alt="image" src="https://github.com/user-attachments/assets/d4f54d16-ca5b-4490-b221-7d218c513fa7" />
 
 
 
 For Pixel y = 0bd
 In the ILA :
 <img width="2466" height="148" alt="image" src="https://github.com/user-attachments/assets/f6fc3c1c-e3b3-431b-8297-6786d232deb4" />
-In simulation :
+In testbench simulation :
 <img width="2142" height="400" alt="image" src="https://github.com/user-attachments/assets/873d12ab-415e-4c77-8426-85e40e54e53b" />
 
 
