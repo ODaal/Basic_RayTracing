@@ -74,6 +74,7 @@ SYSTEM FLOW 💻:
   <img width="2342" height="1102" alt="image" src="https://github.com/user-attachments/assets/561fc23a-fcb3-4ed0-958a-8ddf105a5b89" />
 
 
+
 The results are as follow :
 
 For Pixel y = 109
@@ -101,6 +102,8 @@ In testbench simulation :
 <img width="2124" height="405" alt="image" src="https://github.com/user-attachments/assets/5b444bc1-0087-4e80-89d7-defcb307f1dd" />
 
 
+A quick look at the overall behavioural simulation:
+<img width="2148" height="1240" alt="image" src="https://github.com/user-attachments/assets/ed6a3dbf-a546-448d-818a-7c1d648bc124" />
 
 
 
