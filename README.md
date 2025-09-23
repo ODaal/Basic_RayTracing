@@ -66,7 +66,6 @@ SYSTEM FLOW 💻:
     action: "Frame Packer + AXI/HDMI send the final rendered frame to display." ( Still not working :( )
 
 
-
   The logic block design :
   <img width="2255" height="941" alt="image" src="https://github.com/user-attachments/assets/ace5bfcb-5e9f-49dd-ae81-489c5471420c" />
 
@@ -75,11 +74,14 @@ SYSTEM FLOW 💻:
   <img width="2342" height="1102" alt="image" src="https://github.com/user-attachments/assets/561fc23a-fcb3-4ed0-958a-8ddf105a5b89" />
 
 
+The results are as follow :
+
+For Pixel y = 109
 <img width="2466" height="153" alt="image" src="https://github.com/user-attachments/assets/88360559-20c9-4b8e-ab5d-516b8d31fe7a" />
 <img width="2466" height="148" alt="image" src="https://github.com/user-attachments/assets/f6fc3c1c-e3b3-431b-8297-6786d232deb4" />
 
 
-
+Pixel y = 0d9
 <img width="2270" height="149" alt="image" src="https://github.com/user-attachments/assets/7a632553-02d9-4d93-ab3c-f6903f957bde" />
 <img width="2468" height="148" alt="image" src="https://github.com/user-attachments/assets/ec0aac28-0552-42ba-9408-1202d5bdd2a3" />
 
