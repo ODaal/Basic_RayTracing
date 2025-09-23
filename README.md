@@ -66,16 +66,16 @@ SYSTEM FLOW 💻:
     action: "Frame Packer + AXI/HDMI send the final rendered frame to display." ( Still not working :( )
 
 
-  The logic block design :
+  🧩 The logic block design :
   <img width="2255" height="941" alt="image" src="https://github.com/user-attachments/assets/ace5bfcb-5e9f-49dd-ae81-489c5471420c" />
 
 
-  The HDMI output block design (still non-functionnal) :
+  🧩 The HDMI output block design (still non-functionnal) :
   <img width="2342" height="1102" alt="image" src="https://github.com/user-attachments/assets/561fc23a-fcb3-4ed0-958a-8ddf105a5b89" />
 
 
 
-The results are as follow :
+📊 The results are as follow :
 
 For Pixel y = 109
 In the ILA :
