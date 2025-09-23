@@ -78,6 +78,7 @@ The results are as follow :
 
 For Pixel y = 109
 <img width="2466" height="153" alt="image" src="https://github.com/user-attachments/assets/88360559-20c9-4b8e-ab5d-516b8d31fe7a" />
+For Pixel y = 0bd
 <img width="2466" height="148" alt="image" src="https://github.com/user-attachments/assets/f6fc3c1c-e3b3-431b-8297-6786d232deb4" />
 
 
