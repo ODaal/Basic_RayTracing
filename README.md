@@ -131,5 +131,10 @@ By optimazing the overall logic, an estimated 30 fps can be achieved by the end 
 - Implement full parallelization.
 - Enable reflections and recursive rays.
 - Complete HDMI output and test on real display.
+  
 
-
+## 📌 Additional notes
+- Individual testbenches haves been made for each module for validation
+- The general simulation testbench only tries to mimic the RTL deployement
+- PS.py is a code file to run bit stream, enable debug brdige over ethernet, and enable 
+  the interrupt for the HDMI output only when one frame is done (not fully functionnal yet)
