@@ -1,6 +1,7 @@
 # Basic_RayTracing
 This project is a hardware-based ray tracing engine implemented in Verilog for the Xilinx PYNQ-Z2 FPGA board. It demonstrates the fundamentals of real-time graphics rendering using fixed-point arithmetic and modular design.
 
+
 Features 🚀:
   - "🟦 Thread Generator"
     description: >
@@ -44,6 +45,7 @@ Features 🚀:
     description: >
       Bridges framebuffer output to the HDMI pipeline (rgb2dvi) for monitor display.
     
+    
 
 SYSTEM FLOW 💻:
 
@@ -64,6 +66,7 @@ SYSTEM FLOW 💻:
     
   - step: "6️⃣"
     action: "Frame Packer + AXI/HDMI send the final rendered frame to display." ( Still not working :( )
+    
 
 
   🧩 The logic block design :
@@ -72,6 +75,7 @@ SYSTEM FLOW 💻:
 
   🧩 The HDMI output block design (still non-functionnal) :
   <img width="2342" height="1102" alt="image" src="https://github.com/user-attachments/assets/561fc23a-fcb3-4ed0-958a-8ddf105a5b89" />
+
 
 
 
@@ -111,11 +115,15 @@ A quick look at the overall behavioural simulation:
 the goal is to achieve a 15 fps with 640x480p image quality using 2 parallelized Ray cores, considering the limited number of DSPs.
 By optimazing the overall logic, an estimated 30 fps can be achieved by the end of the project using the PYNQ Z2.
 
+
+
   ## 🚧 Limitations
 - Objects and light source are hard-coded.
 - HDMI pipeline not yet functional (still under development).
 - One-ray-at-a-time tracing model (not full parallelization yet).
 - Fixed-point math introduces rounding errors.
+
+  
 
 ## 🔮 Future Work
 - Pipeline math and intersection modules to optimize speed and ressource usage.
