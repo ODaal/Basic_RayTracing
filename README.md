@@ -79,37 +79,45 @@ SYSTEM FLOW 💻:
 
 
 
-📊 The results are as follow :
+---
 
-For Pixel y = 109
-In the ILA :
+## 🔎 Pixel y = 109
+
+**In the ILA** :  
 <img width="2466" height="153" alt="image" src="https://github.com/user-attachments/assets/88360559-20c9-4b8e-ab5d-516b8d31fe7a" />
 
-In testbench simulation :
+**In testbench simulation** :  
 <img width="2125" height="399" alt="image" src="https://github.com/user-attachments/assets/d4f54d16-ca5b-4490-b221-7d218c513fa7" />
 
+---
 
+## 🔎 Pixel y = 0BD
 
-For Pixel y = 0bd
-In the ILA :
+**In the ILA** :  
 <img width="2466" height="148" alt="image" src="https://github.com/user-attachments/assets/f6fc3c1c-e3b3-431b-8297-6786d232deb4" />
 
-In testbench simulation :
+**In testbench simulation** :  
 <img width="2142" height="400" alt="image" src="https://github.com/user-attachments/assets/873d12ab-415e-4c77-8426-85e40e54e53b" />
 
+---
 
+## 🔎 Pixel y = 0D9
 
-Pixel y = 0d9
-In the ILA :
-<img width="2270" height="149" alt="image" src="https://github.com/user-attachments/assets/7a632553-02d9-4d93-ab3c-f6903f957bde" />
+**In the ILA** :  
+<img width="2270" height="149" alt="image" src="https://github.com/user-attachments/assets/7a632553-02d9-4d93-ab3c-f6903f957bde" />  
 <img width="2468" height="148" alt="image" src="https://github.com/user-attachments/assets/ec0aac28-0552-42ba-9408-1202d5bdd2a3" />
 
-In testbench simulation :
+**In testbench simulation** :  
 <img width="2124" height="405" alt="image" src="https://github.com/user-attachments/assets/5b444bc1-0087-4e80-89d7-defcb307f1dd" />
 
+---
 
-A quick look at the overall behavioural simulation:
+## 📊 Overall Behavioural Simulation
+
 <img width="2148" height="1240" alt="image" src="https://github.com/user-attachments/assets/ed6a3dbf-a546-448d-818a-7c1d648bc124" />
+
+---
+
 
 🎯 4 pixels are generated in 44 cycles (maths taking up 32 cycles) at a 25 MHz speed. Considering the ressources available with the Pynq Z2,
 the goal is to achieve a 15 fps with 640x480p image quality using 2 parallelized Ray cores, considering the limited number of DSPs.
