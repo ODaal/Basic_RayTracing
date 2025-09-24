@@ -16,8 +16,8 @@ Features 🚀:
     description: >
       Performs ray-sphere intersection tests using Q18.14 fixed-point math.
       Computes object surface normals for shading and uses a square root module
-      (4 in parallel) to solve quadratic intersection equations.
-      Mathematical computation are parallelized (4 modules), delays are being solved using FIFOs
+      (5 in parallel) to solve quadratic intersection equations.
+      Mathematical computation are parallelized (square root and inverse), delays are being solved using FIFOs
 
   - "🌞 Shading Module"
     description: >
@@ -80,6 +80,7 @@ SYSTEM FLOW 💻:
 For Pixel y = 109
 In the ILA :
 <img width="2466" height="153" alt="image" src="https://github.com/user-attachments/assets/88360559-20c9-4b8e-ab5d-516b8d31fe7a" />
+
 In testbench simulation :
 <img width="2125" height="399" alt="image" src="https://github.com/user-attachments/assets/d4f54d16-ca5b-4490-b221-7d218c513fa7" />
 
@@ -88,6 +89,7 @@ In testbench simulation :
 For Pixel y = 0bd
 In the ILA :
 <img width="2466" height="148" alt="image" src="https://github.com/user-attachments/assets/f6fc3c1c-e3b3-431b-8297-6786d232deb4" />
+
 In testbench simulation :
 <img width="2142" height="400" alt="image" src="https://github.com/user-attachments/assets/873d12ab-415e-4c77-8426-85e40e54e53b" />
 
@@ -105,7 +107,9 @@ In testbench simulation :
 A quick look at the overall behavioural simulation:
 <img width="2148" height="1240" alt="image" src="https://github.com/user-attachments/assets/ed6a3dbf-a546-448d-818a-7c1d648bc124" />
 
-
+🎯 4 pixels are generated in 44 cycles (maths taking up 32 cycles) at a 25 MHz speed. Considering the ressources available with the Pynq Z2,
+the goal is to achieve a 15 fps with 640x480p image quality using 2 parallelized Ray cores, considering the limited number of DSPs.
+By optimazing the overall logic, an estimated 30 fps can be achieved by the end of the project using the PYNQ Z2.
 
   ## 🚧 Limitations
 - Objects and light source are hard-coded.
@@ -114,6 +118,7 @@ A quick look at the overall behavioural simulation:
 - Fixed-point math introduces rounding errors.
 
 ## 🔮 Future Work
+- Pipeline math and intersection modules to optimize speed and ressource usage.
 - Add multiple objects (spheres, planes).
 - Implement full parallelization.
 - Enable reflections and recursive rays.
