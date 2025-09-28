@@ -119,7 +119,7 @@ SYSTEM FLOW 💻:
 ---
 
 
-🎯 4 pixels are generated in 44 cycles (maths taking up 32 cycles) at a 25 MHz speed. Considering the ressources available with the Pynq Z2,
+🎯 5 pixels are generated in 44 cycles (maths taking up 32 cycles) at a 25 MHz speed. Considering the ressources available with the Pynq Z2,
 the goal is to achieve a 15 fps with 640x480p image quality using 2 parallelized Ray cores, considering the limited number of DSPs.
 By optimazing the overall logic, an estimated 30 fps can be achieved by the end of the project using the PYNQ Z2.
 
