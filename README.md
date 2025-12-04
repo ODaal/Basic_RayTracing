@@ -3,45 +3,45 @@ This project is a hardware-based ray tracing engine implemented in Verilog for t
 
 
 Features :
-  - "Thread Generator"
+  - "**Thread Generator**"
     description: >
       Generates pixel coordinates (x, y) for each ray to be traced.
       Ensures launching one ray at a time into the Ray Core for now.
 
-  - "Ray Core"
+  - "**Ray Core**"
     description: >
       Calculates ray direction vectors based on pixel coordinates.
       Passes normalized rays into the Ray Intersector for object hit testing.
 
-  - "Ray Intersector Wrapper"
+  - "**Ray Intersector Wrapper**"
     description: >
       Performs ray-sphere intersection tests using Q18.14 fixed-point math.
       Computes object surface normals for shading and uses a square root module
       (5 in parallel) to solve quadratic intersection equations.
       Mathematical computation are parallelized (square root and inverse), delays are being solved using FIFOs
 
-  - "Shading Module"
+  - "**Shading Module**"
     description: >
       Implements Lambertian lighting model.
       Inputs: light position (XYZ), surface normal, and base color.
       Outputs: 24-bit RGB pixel values (color[23:0]).
 
-  - "Pixel Delay FIFO"
+  - "**Pixel Delay FIFO**"
     description: >
       Buffers pixel coordinates to synchronize with shading results.
       Ensures pixel positions align with their computed color values.
 
-  - "Frame Packer"
+  - "**Frame Packer**"
     description: >
       Collects shaded pixel data into a framebuffer.
       Prepares frames for AXI Stream interface to HDMI out.
 
-  - "Clocking Wizard"
+  - "**Clocking Wizard**"
     description: >
       Provides multiple clock domains to coordinate math units,
       FIFO synchronization, and video timing.
 
-  - "AXI SmartConnect"
+  - "**AXI SmartConnect**"
     description: >
       Bridges framebuffer output to the HDMI pipeline (rgb2dvi) for monitor display.
     
