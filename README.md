@@ -2,52 +2,52 @@
 This project is a hardware-based ray tracing engine implemented in Verilog for the Xilinx PYNQ-Z2 FPGA board. It demonstrates the fundamentals of real-time graphics rendering using fixed-point arithmetic and modular design.
 
 
-Features 🚀:
-  - "🟦 Thread Generator"
+Features :
+  - "Thread Generator"
     description: >
       Generates pixel coordinates (x, y) for each ray to be traced.
       Ensures launching one ray at a time into the Ray Core for now.
 
-  - "🟩 Ray Core"
+  - "Ray Core"
     description: >
       Calculates ray direction vectors based on pixel coordinates.
       Passes normalized rays into the Ray Intersector for object hit testing.
 
-  - "🟥 Ray Intersector Wrapper"
+  - "Ray Intersector Wrapper"
     description: >
       Performs ray-sphere intersection tests using Q18.14 fixed-point math.
       Computes object surface normals for shading and uses a square root module
       (5 in parallel) to solve quadratic intersection equations.
       Mathematical computation are parallelized (square root and inverse), delays are being solved using FIFOs
 
-  - "🌞 Shading Module"
+  - "Shading Module"
     description: >
       Implements Lambertian lighting model.
       Inputs: light position (XYZ), surface normal, and base color.
       Outputs: 24-bit RGB pixel values (color[23:0]).
 
-  - "📦 Pixel Delay FIFO"
+  - "Pixel Delay FIFO"
     description: >
       Buffers pixel coordinates to synchronize with shading results.
       Ensures pixel positions align with their computed color values.
 
-  - "🖼️ Frame Packer"
+  - "Frame Packer"
     description: >
       Collects shaded pixel data into a framebuffer.
       Prepares frames for AXI Stream interface to HDMI out.
 
-  - "⏱️ Clocking Wizard"
+  - "Clocking Wizard"
     description: >
       Provides multiple clock domains to coordinate math units,
       FIFO synchronization, and video timing.
 
-  - "🔗 AXI SmartConnect"
+  - "AXI SmartConnect"
     description: >
       Bridges framebuffer output to the HDMI pipeline (rgb2dvi) for monitor display.
     
     
 
-SYSTEM FLOW 💻:
+SYSTEM FLOW :
 
   - step: "1️⃣"
     "Thread Generator launches pixel coordinates."
@@ -69,11 +69,11 @@ SYSTEM FLOW 💻:
     
 
 
-  🧩 The logic block design :
+  The logic block design :
   <img width="2255" height="941" alt="image" src="https://github.com/user-attachments/assets/ace5bfcb-5e9f-49dd-ae81-489c5471420c" />
 
 
-  🧩 The HDMI output block design (still non-functionnal) :
+  The HDMI output block design (still non-functionnal) :
   <img width="2342" height="1102" alt="image" src="https://github.com/user-attachments/assets/561fc23a-fcb3-4ed0-958a-8ddf105a5b89" />
 
 
@@ -119,13 +119,13 @@ SYSTEM FLOW 💻:
 ---
 
 
-🎯 5 pixels are generated in 44 cycles (maths taking up 32 cycles) at a 25 MHz speed. Considering the ressources available with the Pynq Z2,
+5 pixels are generated in 44 cycles (maths taking up 32 cycles) at a 25 MHz speed. Considering the ressources available with the Pynq Z2,
 the goal is to achieve a 15 fps with 640x480p image quality using 2 parallelized Ray cores, considering the limited number of DSPs.
 By optimazing the overall logic, an estimated 30 fps can be achieved by the end of the project using the PYNQ Z2.
 
 
 
-  ## 🚧 Limitations
+  ## Limitations
 - Objects and light source are hard-coded.
 - HDMI pipeline not yet functional (still under development).
 - One-ray-at-a-time tracing model (not full parallelization yet).
@@ -133,7 +133,7 @@ By optimazing the overall logic, an estimated 30 fps can be achieved by the end 
 
   
 
-## 🔮 Future Work
+## Future Work
 - Pipeline math and intersection modules to optimize speed and ressource usage.
 - Add multiple objects (spheres, planes).
 - Implement full parallelization.
@@ -141,7 +141,7 @@ By optimazing the overall logic, an estimated 30 fps can be achieved by the end 
 - Complete HDMI output and test on real display.
   
 
-## 📌 Additional notes
+## Additional notes
 - Individual testbenches haves been made for each module for validation
 - The general simulation testbench only tries to mimic the RTL deployement
 - PS.py is a code file to run bit stream, enable debug brdige over ethernet, and enable 
